@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&family=Krona+One&family=Montserrat&family=Roboto+Condensed&family=Roboto+Slab&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+
+.formulario{
+    margin: 9%;
+    padding: 50px;
+    border-style:none;
+    border-radius: 3px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(137, 43, 226, 0.26);
+    text-align: center;
+    box-shadow: 0px 1px 10px 3px var(--box-shadow1);
+
+}
+
+.container_formu{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario h1{
+    font-family: var(--fonte-primaria);
+    font-weight: 600;
+    background: url(imagens/grad2.gif) 50% 50%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.formulario p{
+    font-family: var(--fonte-terciaria);
+    color: var(--cor-primaria);
+}
+
+.formulario a{
+    color: var(--cor-quaternaria);
+    text-decoration: none;
+    
+}
+
+.caixa{
+    background-color: transparent;
+    border-bottom: 2px solid var(--cor-primaria);
+    padding: 5%;
+    border-radius: 2px;
+    width:90%;
+    outline-style: none;/*retira a linha que fica ao redor de algum input de texto que é selecionado*/
+}
+
+
+.formulario button{
+    cursor: pointer;/*Quando o cursor estiver em cima do botão, ele irá ficar com o formato de ponteiro*/
+    font-family: var(--fonte-primaria);
+    width: 100%;
+    color: var(--cor-primaria);
+    
+}
+
+.formulario button:hover{
+    background: url(imagens/grad2.gif) 50% 50%;
+    color: var(--cor-quaternaria);
+    transition: 0.4s;
+}
+
+
+input{
+    color: var(--cor-quaternaria);
+    font-size: medium;
+}
+
+::placeholder{/*placeholder é um pseudoelemento que permite por um texto dentro do input "text", e ele pode ser alterado*/
+    color: var(--cor-primaria);
+    font-family: var(--fonte-primaria);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator{/*todo ícone de calendário de inputs do tipo data será alterado*/
+    filter:invert(0.8);/*não foi possível alterar a cor, então foi utilizado um filtro para o calendário ficar mais visível*/
+}
+
+input[type="date"]{/*Todo input do tipo data vai seguir as alterações abaixo*/
+    color: var(--cor-primaria);
+    font-family: var(--fonte-primaria);
+}
+
+label{
+    color: var(--cor-primaria);
+    font-family: var(--fonte-primaria);
+
+}

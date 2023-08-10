@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&family=Krona+One&family=Montserrat&family=Roboto+Condensed&family=Roboto+Slab&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+
+:root{
+    --fonte-primaria: 'Roboto Condensed', sans-serif;
+    --fonte-secundaria: 'Roboto Slab', sans-serif;
+    --fonte-terciaria: 'Chivo Mono', sans serif;
+
+    --cor-primaria: #9e75df; 
+    --cor-secundaria: #B495EE;
+    --cor-terciaria: #3D0F70;
+    --cor-quaternaria: rgb(239, 213, 252);
+    --cor-quintenaria:rgb(18, 1, 24);
+
+    --cor-hover: rgba(81, 0, 128, 0.425);
+
+    --box-shadow1: rgba(87, 32, 190, 0.68);
+}
+
+html{
+   /* 1440x415, 768x415 ,375x415*/
+}
+
+.fundo{
+    background: linear-gradient(to top, var(--cor-terciaria), var(--cor-quintenaria));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.cabecalho{
+    background-color: var(--cor-primaria);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 3px 10px 3px var(--box-shadow1);
+    position: sticky;
+    top:0;
+    z-index: 1; /*z-index vai mexer com a camada dos elementos, ele vai permitir que o cabeçalho fique a frente dos outros elementos*/
+    width: 100vw;
+    padding-bottom:7px;
+    flex-flow: row wrap;
+    margin-right: 0;
+}
+
+.cabecalho_logo_nome{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.cabecalho_logo{
+    width: 80px;
+    margin-top: 5px;
+    margin-left: 8px;
+}
+
+.cabecalho_nome{
+    font-family: var(--fonte-primaria);
+    background: url(imagens/gradiente_texto.gif) 50% 50%;
+    -webkit-text-fill-color: transparent;/*usamos webkit para pegar uma função mais nova do css, esse nome pode variar com o navegador*/
+    -webkit-background-clip: text;
+}
+
+.cabecalho_link{
+    display: flex;
+    column-gap:30px;
+    margin-right: 2%;
+    margin-left: 2%;
+    
+}
+
+.cabecalho_link_links{
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 7px -3px rgba(0, 0, 0, 0.5), inset 0px -3px 6px -2px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    font-family: var(--fonte-terciaria);
+    font-size: 15px;
+    font-weight: 600;
+    color:#250944;
+    background-color: #6629ac93;
+    text-decoration: none;
+
+}
+
+
+.cabecalho_link_links:hover{
+    background-color: var(--cor-hover);
+    color: var(--cor-quaternaria);
+    transition: .5s;/*Ao aplicarmos o hover, colocamos uma transição de tempo até o efeito do hover ser aplicado por completo*/
+}
+
+.separacao{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    column-gap: 20px;
+    flex-flow: wrap;
+}
+
+.secao{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-style:none;
+    border-radius: 3px;
+    backdrop-filter: blur(10px); /*backdrop-filter permite que efeitos, como o desfoque, seja aplicado em uma área atrás de um elemento*/
+    background-color: rgba(137, 43, 226, 0.26);
+
+}
+
+.princ{
+   padding: 5px 15px 20px 15px;
+   margin-left: 2%;
+   width: 70%;
+
+}
+
+.sp_texto_comum{
+    font-family: var(--fonte-secundaria);
+    font-size: 17px;
+    color: var(--cor-secundaria);
+    text-indent: 10px;/*Quando um texto for criado, ele já vai iniciar com um parágrafo(text-indent)*/
+    text-align: justify;
+    padding: 0px 20px 0px 20px;
+}
+
+.secun{
+    margin-right: 20px;
+    width: fit-content;
+    height: 20%;
+    font-family: var(--fonte-terciaria);
+    color: var(--cor-secundaria);
+    
+}
+
+.sec_jog{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: url(imagens/gradiente_texto.gif) 50% 50%;
+    background-size: cover;
+    border-radius: 3px;
+    
+}
+
+.sec_list li {
+    padding-left: 30px;
+    line-height: 45px;
+    border-bottom: 1px solid #250944;
+    border-top: 1px solid rgba(148, 102, 161, 0.1);
+    list-style: none;
+
+}
+
+.sec_list a{
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
+.sec_list li:hover a{
+    padding-left: 8px;
+    transition: .5s;
+} 
+
+.titulo{
+    font-family: var(--fonte-primaria);
+    font-size: 30px;
+    text-align: center;
+    color: var(--cor-primaria);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.subtitulo{
+    color: var(--cor-primaria);
+    font-family: var(--fonte-secundaria);
+    text-indent: 50px;
+}
+
+.espaco{
+    padding-left: 50px;
+}
+
+.img_posi img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.manete_logo{
+    position: fixed;
+    bottom: -210px;
+    right: -150px;
+    opacity: 8%;
+    width: 500px;
+    z-index: -3;
+}
+
+.rodape{
+    display:flex;
+    background-color: var(--cor-primaria);
+    box-shadow: 0px 3px 15px 3px var(--box-shadow1);
+    padding-bottom: 30px;
+    flex-flow: row wrap;
+    margin-top:auto; 
+
+}
+
+.rodape_box{
+    padding-left: 20px;
+    padding-top: 20px;
+    flex: 1;
+    line-height: 15px;
+    font-weight: 600;
+    
+}
+
+.rodape img{
+    width: 25px;
+    margin-right: 10px;
+    padding-left: 20px;
+}
+
+.rodape a, p{
+    text-decoration: none;
+    font-family: var(--fonte-terciaria);
+    font-size: 15px;
+    color:var(--cor-terciaria);
+}
+
+.center{
+    display: flex;
+    align-items: center;
+}
+
+.rodape_box_titulo{
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-terciaria);
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    border-bottom: 2px solid var(--cor-terciaria);
+    border-radius: 2px;
+    
+}
+
