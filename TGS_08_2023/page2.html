@@ -24,25 +24,30 @@
     </header>
 
     <main>
-        <div class="container_formu">
-            <form class="formulario">
-                <div>
-                    <p><h1>LOGIN</h1></p>
-                    </br>
-                    </br>
-                    <input type="text" placeholder="Nome de Usuário" class="caixa">
-                    </br>
-                    </br>
-                    <input type="password" placeholder="Senha" class="caixa">
-                    </br>
-                    </br>
-                    <button type="submit" class="cabecalho_link_links">Enviar</button>
-                </div>  
-            </form>
+        <div class="ctf">
+            <div class="container_formu">
+                <form class="formulario">
+                    <div>
+                        <p><h1>LOGIN</h1></p>
+                        </br>
+                        </br>
+                        <input type="text" placeholder="Nome de Usuário" class="caixa">
+                        </br>
+                        </br>
+                        <div id="erroSenha" class="sp_texto_comum"></div>
+                        <input type="password" placeholder="Senha" class="caixa" id="senha" onkeyup="validarSenha()">
+                        </br>
+                        </br>
+                        <button type="submit" class="cabecalho_link_links">Enviar</button>
+                    </div>  
+                </form>
+            </div>
         </div>
+        
 
         <img src="logo.png" class="manete_logo">
 
     </main>
+    <script src="javascript.js"></script>
 </body>
 </html>
