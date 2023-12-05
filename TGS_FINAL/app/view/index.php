@@ -6,8 +6,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="TGS(1).png"/>
-        <link rel="stylesheet" href="estilos/style_space.css"/>
+        <link rel="icon" type="image/png" href="/TGS_FINAL/images/icones/logo.png"/>
+        <link rel="stylesheet" href="/TGS_FINAL/css/style_space.css"/>
         <title>TGS - The Game Space</title>
 
     </head>
@@ -52,24 +52,13 @@
             </div>
         </div>
 
-        <header class="cabecalho">
-            <div class="cabecalho_logo_nome">
-                <img src="logo.png" class="cabecalho_logo">
-                <h1 class="cabecalho_nome">The Game Space</h1>
-            </div>
-            <nav class="cabecalho_link">
-                <a class="cabecalho_link_links" href="index.html">Home</a>
-                <a class="cabecalho_link_links" href="index.html">Sobre Nós</a><!--Ainda não possuímos a página "sobre nós", por isso colocamos o link da página principal-->
-                <a class="cabecalho_link_links" href="page2.html">Login</a>
-                <a class="cabecalho_link_links" href="page3.html">Cadastro</a>
-            </nav>
-        </header>
+        <?php include_once('header.php'); ?>
 
         <main>
 
             <div class="separacao">
                 <section class="secao princ">
-                    <h1 class="titulo" style="color:#DAADFF" id="titulo_icon">  <div>The Game Space </div> <img id="icon_sp" src="icons/icons8-playstation-buttons-50.png"> </h1> 
+                    <h1 class="titulo" style="color:#DAADFF" id="titulo_icon">  <div>The Game Space </div> <img id="icon_sp" src="/TGS_FINAL/images/icones/icons8-playstation-buttons-50.png"> </h1> 
                 </br>
 
                     <div class="meio_s">
@@ -83,19 +72,19 @@
                                 <div class="slide first">
                                     <!--imagens-->
                                     <div class="container">
-                                        <img src="1.jpg" class="size">
+                                        <img src="/TGS_FINAL/images/imagens_carrossel/1.jpg" class="size">
                                     </div>
                                 </div>
                     
                                 <div class="slide second">
                                     <div class="container">
-                                        <img src="2.jpg" class="size">
+                                        <img src="/TGS_FINAL/images/imagens_carrossel/2.jpg" class="size">
                                     </div>
                                 </div>
                     
                                 <div class="slide third">
                                     <div class="container">
-                                        <img src="3.jpg" class="size">
+                                        <img src="/TGS_FINAL/images/imagens_carrossel/3.jpg" class="size">
                                     </div>
                                 </div>
                     
@@ -139,7 +128,7 @@
                     </br>
                     <h1 class="titulo">Como encontrar o seu estilo/tipo de jogo?</h1>
                     <div class="img_posi">
-                        <img src="estilos/imagens/boneco no computador.png">
+                        <img src="/TGS_FINAL/images/boneco no computador.png">
                     </div>     
                     </br>
                     </br>
@@ -198,39 +187,13 @@
                 </aside>
             </div>
 
-            <img src="logo.png" class="manete_logo" >
+            <img src="/TGS_FINAL/images/icones/logo.png" class="manete_logo" >
             
         </main>
 
-        <footer class="rodape">
-            <div class="rodape_box">
-                <h3 class="rodape_box_titulo" >➤ REDES SOCIAIS</h3>
-                <div class="center">
-                    <img src="estilos/imagens/icon_insta.png">
-                    <p><a href="https://www.instagram.com/">@andre_thebald</a>//</p>
-                    <p><a href="https://www.instagram.com/">@ellen_monteiro</a></p>
-                    
-                </div>
-                </br>
-                <div class="center">
-                    <img src="estilos/imagens/icon_twitter.png">
-                    <p><a href="https://twitter.com/explore">@andre_thebald</a>//</p>
-                    <p><a href="https://twitter.com/explore">@ellen_monteiro</a></p>
-                </div>
-                
-            </div>
-            <div class="rodape_box">
-                <h3 class="rodape_box_titulo">➤ CONTATOS</h3>
-                <div class="espaco">
-                    <p>André Thebald: andresthebald@gmail.com</p>
-                    </br>
-                    </br>
-                    <p>Ellen Monteiro: ellenmonteiro000@gmail.com</p>
-                </div>
-            </div>
-
-        </footer>
-        <script src="js2.js"></script>
+        <?php include_once('footer.php') ?>
+        
+        <script src="/TGS_FINAL/js/js2.js"></script>
     </body>
 
 </html>

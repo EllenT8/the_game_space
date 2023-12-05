@@ -62,7 +62,7 @@
 
 .cabecalho_nome{
     font-family: var(--fonte-primaria);
-    background: url(imagens/gradiente_texto.gif) 50% 50%;
+    background: url(/TGS_FINAL/images/gradientes/gradiente_texto.gif) 50% 50%;
     -webkit-text-fill-color: transparent;/*usamos webkit para pegar uma função mais nova do css, esse nome pode variar com o navegador*/
     -webkit-background-clip: text;
 }
@@ -147,7 +147,7 @@
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    background: url(imagens/gradiente_texto.gif) 50% 50%;
+    background: url(/TGS_FINAL/images/gradientes/gradiente_texto.gif) 50% 50%;
     background-size: cover;
     border-radius: 3px;
     

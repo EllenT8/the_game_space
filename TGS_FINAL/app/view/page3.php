@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TGS - CADASTRO</title>
-    <link rel="stylesheet" href="estilos/formulario.css"/>
-    <link rel="stylesheet" href="estilos/style_space.css"/>
+    <link rel="stylesheet" href="/TGS_FINAL/css/formulario.css"/>
+    <link rel="stylesheet" href="/TGS_FINAL/css/style_space.css"/>
 </head>
 <body class="fundo">
 
@@ -48,37 +48,29 @@
         </div>
     </div>
 
-    <header class="cabecalho">
-        <div class="cabecalho_logo_nome">
-            <img src="logo.png" class="cabecalho_logo">
-            <h1 class="cabecalho_nome">The Game Space</h1>
-        </div>
-        <nav class="cabecalho_link">
-            <a class="cabecalho_link_links" href="index.html">Home</a>
-            <a class="cabecalho_link_links" href="index.html">Sobre Nós</a>
-            <a class="cabecalho_link_links" href="page2.html">Login</a>
-            <a class="cabecalho_link_links" href="page3.html">Cadastro</a>
-        </nav>
-    </header>
+    <?php include_once('header.php'); ?>
 
     <main>
         
         <div class="ctf">
             <div class="container_formu">
-                <form class="formulario">
+                <form class="formulario" action="/TGS_FINAL/app/control/Cadastro.php" method="post">
                         <p><h1>CADASTRO</h1></p>
                         </br>
-                        <input type="text" placeholder="E-mail" class="caixa">
+                        <input type="text" placeholder="E-mail" class="caixa" name="email">
                         </br>
                         </br>
                         <div id="erroSenha" class="sp_texto_comum"></div>
-                        <input type="password" placeholder="Senha" class="caixa" id="senha" onkeyup="validarSenha()">
+                        <input type="password" placeholder="Senha" class="caixa" id="senha" name="senha" onkeyup="validarSenha()">
                         </br>
                         </br>
-                        <input type="date" placeholder="Data de Nascimento" class="caixa">
+                        <input type="text" placeholder="Data de Nascimento (aaaa-mm-dd)" class="caixa" name="dt_nsc">
                         </br>
                         </br>
-                        <input type="text" placeholder="Nome de Usuário" class="caixa">
+                        <input type="text" placeholder="Nome de Usuário" name="usu" class="caixa">
+                        </br>
+                        </br>
+                        <input type="text" placeholder="Nome Verdadeiro" name="n_real" class="caixa">
                         </br>
                         </br>
                         <input type="checkbox">
@@ -86,17 +78,14 @@
                         </br>
                         </br>
                         <button type="submit" class="cabecalho_link_links">Enviar</button>
-                        </br>
-                        </br>
-                        <p>Esqueceu a senha? <a href="index.html">Clique aqui</a>.</p>
                 </form>
             </div>
         </div>
         
 
-        <img src="logo.png" class="manete_logo" >
+        <img src="/TGS_FINAL/images/icones/logo.png" class="manete_logo" >
 
     </main>
-    <script src="javascript.js"></script>
+    <script src="/TGS_FINAL/js/javascript.js"></script>
 </body>
 </html>

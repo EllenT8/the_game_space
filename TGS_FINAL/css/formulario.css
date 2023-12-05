@@ -19,15 +19,21 @@
 
 }
 
-.container_formu{
+.ctf{
     display: flex;
+    justify-content: center;
+}
+
+.container_formu{
+    display: block;
+    width: 30rem;
     justify-content: center;
 }
 
 .formulario h1{
     font-family: var(--fonte-primaria);
     font-weight: 600;
-    background: url(imagens/grad2.gif) 50% 50%;
+    background: url(/TGS_FINAL/images/gradientes/grad2.gif) 50% 50%;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
@@ -62,7 +68,9 @@
 }
 
 .formulario button:hover{
-    background: url(imagens/grad2.gif) 50% 50%;
+    background: url(/TGS_FINAL/images/gradientes/grad2.gif) 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: var(--cor-quaternaria);
     transition: 0.4s;
 }
