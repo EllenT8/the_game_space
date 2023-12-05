@@ -58,7 +58,7 @@
                 <form class="formulario" action="/TGS_FINAL/app/control/Upload.php" method="post" enctype="multipart/form-data">
                         <p><h1>UPLOAD DE ARQUIVOS</h1></p>
                         </br>
-                        <!--multiple ==> vai permitir que eu faça o upload de mais de uma imagem||| arquivo[] ==> vai permitir que eu receba a informação de várias imagens?-->
+                        <!--multiple ==> vai permitir que eu faça o upload de mais de um arquivo||| arquivo[] ==> vai permitir que eu receba a informação de vários arquivos?-->
                         <input type="file" placeholder="Seu Email" class="caixa" name="arquivo[]" multiple >
                         </br>
                         </br>
